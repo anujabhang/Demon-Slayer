@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.game-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("bgfin.png");
+    background-size: cover;
+}
+
+.saitama{
+    height: 30%;
+    width: 15%;
+    background-image: url("tanjiro.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 50vh;
+    
+}
+
+.villain{
+    height: 30%;
+    width: 15%;
+    background-image: url("akaza.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 50vh;
+
+}
