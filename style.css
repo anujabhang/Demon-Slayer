@@ -10,26 +10,58 @@
     background-size: cover;
 }
 
-.saitama{
+.tanjiro{
     height: 30%;
     width: 15%;
-    background-image: url("tanjiro.webp");
+    background-image: url("tanjiro.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
-    left: 50vh;
+    left: 20%;
     
 }
 
-.villain{
+.akaza{
     height: 30%;
     width: 15%;
-    background-image: url("akaza.webp");
+    background-image: url("akaza.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
-    right: 50vh;
+    right: 20%;
 
+}
+
+.animateTanjiro{
+    animation: jump 0.6s linear;
+}
+
+.animateAkaza{
+    animation: move 2s linear 0s infinite normal;
+
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 35%;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes move{
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: 70%;
+    }
+    100%{
+        right: 20%;
+    }
 }
