@@ -1,24 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.game-container{
+.game-container {
     height: 100vh;
     width: 100vw;
     background-image: url("bgfin.png");
     background-size: cover;
 }
 
-.score{
-    color: white;
+.score {
+    color: yellow;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    border: 0.5rem solid yellow;
+    border-radius: 0.6rem;
 }
-.gameOver{
+
+.gameOver {
+    height: 30vh;
+    width: 20vw;
     visibility: hidden;
     color: white;
+    background-image: url(game\ over.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 40%;
+    top: 30%;
 }
-.tanjiro{
+
+.tanjiro {
     height: 20%;
     width: 20%;
     background-image: url("tanjiro.png");
@@ -27,10 +42,11 @@
     position: absolute;
     bottom: 0;
     left: 20%;
-    
+    background-position: center;
+
 }
 
-.akaza{
+.akaza {
     height: 20%;
     width: 20%;
     background-image: url("akaza.png");
@@ -42,31 +58,35 @@
 
 }
 
-.animateTanjiro{
+.animateTanjiro {
     animation: jump 1.5s linear;
 }
 
-.animateAkaza{
+.animateAkaza {
     animation: move 3.5s linear 0s infinite normal;
 
 }
 
-@keyframes jump{
-    0%{
+@keyframes jump {
+    0% {
         bottom: 0;
     }
-    50%{
+
+    50% {
         bottom: 50%;
     }
-    100%{
+
+    100% {
         bottom: 0;
     }
 }
-@keyframes move{
-    0%{
+
+@keyframes move {
+    0% {
         right: -20%;
     }
-    100%{
+
+    100% {
         right: 100%;
     }
 }
