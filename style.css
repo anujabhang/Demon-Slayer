@@ -10,6 +10,14 @@
     background-image: url("bgfin.png");
     background-size: cover;
 }
+
+.score{
+    color: white;
+}
+.gameOver{
+    visibility: hidden;
+    color: white;
+}
 .tanjiro{
     height: 20%;
     width: 20%;
